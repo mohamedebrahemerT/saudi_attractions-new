@@ -17,6 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(["namespace" => "API"], function () {
+
 Route::middleware(['APITranslation'])->group(function () {
 
 Route::group(['prefix' => 'v1/{lang}'], function () {
@@ -27,7 +29,7 @@ Route::group(['prefix' => 'v1/{lang}'], function () {
 
     Route::get('events', 'EventController@listEvents');
 
-    Route::get('events/{id}', 'API\EventController@listEventsDetails');
+    Route::get('events/{id}', 'EventController@listEventsDetails');
 
     Route::get('events/top/list', 'EventController@listTopEvents');
 
@@ -142,3 +144,4 @@ Route::group(['prefix' => 'v1/{lang}'], function () {
 
     });
 });
+  });
