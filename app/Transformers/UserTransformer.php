@@ -18,7 +18,7 @@ class UserTransformer extends Transformer
             "city"                   =>    $user['city']['name'],
             "address"                =>    $user['address'],
             "verified"               =>    $user['verified'],
-            "profile_image"          =>     "",
+           // "profile_image"          =>     "",
         ];
     }
 
