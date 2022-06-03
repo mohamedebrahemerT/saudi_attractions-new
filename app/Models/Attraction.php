@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-//use Dimsav\Translatable\Translatable;
+use Astrotomic\Translatable\Translatable;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Attraction extends Model
 {
     use SoftDeletes;
-   // use Translatable;
+  use Translatable;
 
     public $translationModel = 'App\AttractionLocale';
 

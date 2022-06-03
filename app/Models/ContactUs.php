@@ -54,7 +54,7 @@ use Dimsav\Translatable\Translatable;
 class ContactUs extends Model
 {
     use SoftDeletes;
-    //use Translatable;
+    use Translatable;
 
 
     public $translationModel = 'App\ContactUsLocale';

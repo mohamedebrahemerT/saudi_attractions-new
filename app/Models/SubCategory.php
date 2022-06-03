@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-//use Dimsav\Translatable\Translatable;
+use Astrotomic\Translatable\Translatable;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class SubCategory extends Model
 {
     use SoftDeletes;
-  //  use Translatable;
+   use Translatable;
 
     public $table = 'sub_categories';
     

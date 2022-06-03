@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-//use Dimsav\Translatable\Translatable;
+use Astrotomic\Translatable\Translatable;
 
 /**
  * Class Category
@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Category extends Model
 {
     use SoftDeletes;
-   // use Translatable;
+   use Translatable;
 
     public $table = 'categories';
     
