@@ -6,6 +6,17 @@ class UserTransformer extends Transformer
 
     public function transform($user)
     {
+
+
+          if (isset($user['media']['image'])) 
+          {
+             $profile_image =asset($user['media']['image']);
+          }
+          else
+          {
+             $profile_image='';
+          }
+
         return [
             "id"                     =>    $user['id'],
             "name"                   =>    $user['name'],
@@ -18,7 +29,7 @@ class UserTransformer extends Transformer
             "city"                   =>    $user['city']['name'],
             "address"                =>    $user['address'],
             "verified"               =>    $user['verified'],
-            "profile_image"          =>    ($user['media']['image']) ? asset($user['media']['image']) :null,
+            "profile_image"          =>    $profile_image,
         ];
     }
 
