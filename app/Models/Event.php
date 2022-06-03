@@ -126,7 +126,7 @@ class Event extends Model
 
     public function sub_categories()
     {
-        return $this->belongsToMany('App\Models\SubCategory','events_subCategory','event_id','sub_category_id');
+        return $this->belongsToMany('App\Models\SubCategory','events_subcategory','event_id','sub_category_id');
     }
 
     public function event_days()
