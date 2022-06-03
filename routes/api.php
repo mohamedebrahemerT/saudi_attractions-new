@@ -27,7 +27,7 @@ Route::group(['prefix' => 'v1/{lang}'], function () {
 
     Route::get('events', 'EventController@listEvents');
 
-    Route::get('events/{id}', 'EventController@listEventsDetails');
+    Route::get('events/{id}', 'API\EventController@listEventsDetails');
 
     Route::get('events/top/list', 'EventController@listTopEvents');
 
