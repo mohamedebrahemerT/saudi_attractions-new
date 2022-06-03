@@ -1,0 +1,46 @@
+    .container {
+        width: 800px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .select2 {
+        width: 300px;
+    }
+    
+    .select2-width .select2 {
+        width: 100%;
+    }
+    
+    .form-control[readonly] {
+        background-color: #fff !important;
+    }
+    
+    .add-media .tab-pane {
+        margin-top: 30px;
+    }
+    
+    .uploaded-images {
+        margin-top: 20px;
+    }
+    
+    .uploaded-images ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .uploaded-images ul li {
+        width: 150px;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .uploaded-images ul li img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .fr-box.fr-basic .fr-element {
+        min-height: 200px;
+    }
