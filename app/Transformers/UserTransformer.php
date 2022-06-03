@@ -14,7 +14,7 @@ class UserTransformer extends Transformer
             "birth_date"             =>    $user['birth_date'],
             "gender"                 =>    $user['gender'],
             "ja_id"                  =>    $user['ja_id'],
-            "country"                =>    $user['country']['name'],
+            "country"                =>    '',
             "city"                   =>    $user['city']['name'],
             "address"                =>    $user['address'],
             "verified"               =>    $user['verified'],
